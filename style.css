@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--pale-blue) url(images/pattern-background-desktop.svg)
+    no-repeat center top/ cover;
+  font-size: 1.6rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  min-width: 300px;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 16px;
+  margin-bottom: 2.5rem;
+}
+
+.image-wrapper img {
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.texts {
+  text-align: center;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.texts h1 {
+  font-size: 2.2rem;
+  color: var(--dark-blue);
+}
+
+.texts p {
+  font-size: 1.4rem;
+  color: var(--desaturated-blue);
+  line-height: 2.2rem;
+}
+
+.plan {
+  display: flex;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 8px;
+  max-width: 25rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--very-pale-blue);
+}
+
+.type {
+  display: flex;
+  flex-direction: column;
+}
+
+.type span {
+  color: var(--desaturated-blue);
+  font-size: 1rem;
+}
+
+.type span:nth-child(1) {
+  color: var(--dark-blue);
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 0.2rem;
+}
+
+.change a {
+  color: var(--Bright-blue);
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s;
+  transition: filter 0.2s;
+  font-size: 1.3rem;
+}
+
+.change a:hover {
+  filter: brightness(1.8);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.proceed {
+  width: 25rem;
+  background-color: var(--Bright-blue);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 15px 0;
+  transition: filter 0.2s;
+}
+
+.proceed:hover {
+  filter: brightness(1.8);
+}
+
+.cancel {
+  border: none;
+  background-color: transparent;
+  font-size: 1.3rem;
+  color: var(--desaturated-blue);
+  font-weight: 700;
+  transition: color 0.2s;
+}
+
+.cancel:hover {
+  color: var(--dark-blue);
+}
+
+.attribution {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  color: #1e1fcd;
+  font-weight: bold;
+}
+.attribution a:hover {
+  color: #5a5ae6;
+}
+
+@media (min-width: 500px) {
+  :root {
+    font-size: 80%;
+  }
+}
+
+@media (min-width: 800px) {
+  :root {
+    font-size: 90%;
+  }
+}
