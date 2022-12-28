@@ -17,7 +17,8 @@
 
 body {
   background: var(--pale-blue) url(images/pattern-background-desktop.svg)
-    no-repeat center top/ cover;
+    no-repeat center/ cover;
+  background-position: center -20rem;
   font-size: 1.6rem;
   height: 100vh;
   display: flex;
@@ -142,12 +143,14 @@ body {
   font-size: 1.2rem;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
   text-decoration: none;
   color: #1e1fcd;
   font-weight: bold;
 }
+
 .attribution a:hover {
   color: #5a5ae6;
 }
